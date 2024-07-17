@@ -239,11 +239,11 @@ public class Constants {
 
         static {
             Map<String, Integer> lostWelderFrames = new HashMap<>(); // x = 128, y = 64 
-            lostWelderFrames.put("attack", );
-            lostWelderFrames.put("damaged", );
-            lostWelderFrames.put("death", );
-            lostWelderFrames.put("idle", );
-            lostWelderFrames.put("walk", );
+            lostWelderFrames.put("attack", 9);
+            lostWelderFrames.put("damaged", 4);
+            lostWelderFrames.put("death", 13);
+            lostWelderFrames.put("idle", 4);
+            lostWelderFrames.put("walk", 6);
             characterFrames.put("lostWelder", lostWelderFrames);
         }
 
@@ -313,13 +313,25 @@ public class Constants {
         }
 
         static {
-            Map<String, Integer> samuraiBanditFrames = new HashMap<>(); // x = 64, y = 64 
-            samuraiBanditFrames.put("attackBaseForm", );
-            samuraiBanditFrames.put("attackIceForm", );
-            samuraiBanditFrames.put("bloodExposionSpellBaseForm", );
-            samuraiBanditFrames.put("bloodExposionSpellIceForm", );
-            characterFrames.put("samuraiBandit", samuraiBanditFrames);
+            Map<String, Integer> samuraiBanditBloodFrames = new HashMap<>(); // x = 64, y = 64 
+            samuraiBanditBloodFrames.put("bloodExplosionSpell", 19);
+            samuraiBanditBloodFrames.put("death", 8);
+            samuraiBanditBloodFrames.put("jumpAttack", 13);
+            samuraiBanditBloodFrames.put("run", 6);
+            samuraiBanditBloodFrames.put("shoot", 5);
+            characterFrames.put("samuraiBanditBlood", samuraiBanditBloodFrames);
         }
+
+        static {
+            Map<String, Integer> samuraiBanditIceFrames = new HashMap<>(); // x = 64, y = 64 
+            samuraiBanditIceFrames.put("iceExplosionSpell", 19); // x = 196, y = 62
+            samuraiBanditIceFrames.put("death", 8);
+            samuraiBanditIceFrames.put("jumpAttack", 13);
+            samuraiBanditIceFrames.put("run", 6);
+            samuraiBanditIceFrames.put("shoot", 5);
+            characterFrames.put("samuraiBanditIce", samuraiBanditIceFrames);
+        }
+
 
         static {
             Map<String, Integer> shadowOfStormsFrames = new HashMap<>(); // x = 137, y = 91 
@@ -374,13 +386,13 @@ public class Constants {
 
         static {
             Map<String, Integer> spiritBoxerFrames = new HashMap<>(); // x = 137, y = 44 
-            spiritBoxerFrames.put("attackA", );
-            spiritBoxerFrames.put("attackB", );
-            spiritBoxerFrames.put("attackC", );
-            spiritBoxerFrames.put("damagedDeath", );
-            spiritBoxerFrames.put("fullComboAttack", );
-            spiritBoxerFrames.put("idle", );
-            spiritBoxerFrames.put("run", );
+            spiritBoxerFrames.put("attackA", 6);
+            spiritBoxerFrames.put("attackB", 13);
+            spiritBoxerFrames.put("attackC", 10);
+            spiritBoxerFrames.put("damagedDeath", 10); // damaged (6), death (6)
+            spiritBoxerFrames.put("fullComboAttack", 29);
+            spiritBoxerFrames.put("idle", 4);
+            spiritBoxerFrames.put("run", 6);
             characterFrames.put("spiritBoxer", spiritBoxerFrames);
         }
 
